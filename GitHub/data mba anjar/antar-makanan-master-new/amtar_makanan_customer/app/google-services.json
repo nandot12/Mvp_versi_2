@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "582051894317",
+    "firebase_url": "https://ojek-amanah.firebaseio.com",
+    "project_id": "ojek-amanah",
+    "storage_bucket": "ojek-amanah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582051894317:android:9c56cdc849d803c75fd4a4",
+        "android_client_info": {
+          "package_name": "com.ojekamanah.appdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582051894317-fbvthkq5srnh808opaa62pnq068t5jqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8qlFEupH7l_pFJzYWyUXkedRqcog6ESA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582051894317-fbvthkq5srnh808opaa62pnq068t5jqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582051894317:android:0241c4ac5eb217ab5fd4a4",
+        "android_client_info": {
+          "package_name": "com.ojekamanah.deliveryfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582051894317-fbvthkq5srnh808opaa62pnq068t5jqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8qlFEupH7l_pFJzYWyUXkedRqcog6ESA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582051894317-fbvthkq5srnh808opaa62pnq068t5jqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
