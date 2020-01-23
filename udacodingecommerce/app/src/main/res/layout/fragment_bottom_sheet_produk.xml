@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.listProduk.bottomsheet.BottomSheetProdukFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/sheetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Nama Produk" />
+
+
+        <TextView
+            android:id="@+id/sheetPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="Nama Produk"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/sheetPrice"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"/>
+
+
+        <TextView
+            android:id="@+id/sheetCount"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="1"
+            android:gravity="center"
+            android:layout_below="@+id/lineView"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/sheetPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineView"
+            android:background="@null"
+            android:layout_toRightOf="@+id/sheetCount"
+            android:text="+"/>
+
+        <Button
+            android:id="@+id/sheetMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineView"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/sheetCount"
+            android:text="-"/>
+
+
+        <Button
+            android:id="@+id/sheetKeranjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="lihat keranjang : Rp 0"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/sheetMinus"/>
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/sheetKeranjang"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</FrameLayout>

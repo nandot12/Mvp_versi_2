@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/produkItemImg"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/produkItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama gambar"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/produkItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Rp 30.000"
+        android:gravity="center"/>
+
+
+    <RatingBar
+        android:id="@+id/produkItemRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+
+
+
+</LinearLayout>
