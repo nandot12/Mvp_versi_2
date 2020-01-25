@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.digitalindo.simplenavigation.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment"
+            app:exitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_left"
+          />
+        <action
+            android:id="@+id/action_firstFragment_to_amountFragment"
+            app:destination="@id/amountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/amountFragment"
+        android:name="com.digitalindo.simplenavigation.AmountFragment"
+        android:label="fragment_amount"
+        tools:layout="@layout/fragment_amount" >
+        <action
+            android:id="@+id/action_amountFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.digitalindo.simplenavigation.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.digitalindo.simplenavigation.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+</navigation>
