@@ -13,8 +13,8 @@
         <action
             android:id="@+id/action_firstFragment_to_balanceFragment"
             app:destination="@id/balanceFragment"
-            app:exitAnim="@anim/slide_out_right"
             app:enterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
           />
         <action
             android:id="@+id/action_firstFragment_to_amountFragment"
@@ -38,5 +38,13 @@
         android:id="@+id/resultFragment"
         android:name="com.digitalindo.simplenavigation.ResultFragment"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="http://google.com" />
+        <action
+            android:id="@+id/action_resultFragment_to_firstFragment"
+            app:exitAnim="@anim/slide_in_left"
+            app:popUpTo="@id/firstFragment" />
+    </fragment>
 </navigation>
